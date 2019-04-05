@@ -1,0 +1,39 @@
+@import "../../variables.scss";
+
+ul {
+    list-style: none;
+    li {
+        display: inline-block;
+        margin-right: 25px;
+    }
+
+    li > a {
+        font-size: 20px;
+        color: $text-color-darker;
+
+        &:hover {
+            color: $link-color;
+        }
+    }
+}
+
+.navbar {
+    padding: $basic-padding;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: $background-color-lighter;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

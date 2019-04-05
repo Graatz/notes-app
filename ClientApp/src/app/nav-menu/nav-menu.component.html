@@ -1,0 +1,25 @@
+<div *ngIf="navbar.visible" class="navbar" [ngClass]='{ "in": isExpanded }'>
+    <div class="navbar-left">
+        <ul>
+            <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+                <a [routerLink]='["/"]' (click)='collapse()'>
+                    <span class='glyphicon glyphicon-home'></span> Home
+                </a>
+            </li>
+            <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/counter"]' (click)='collapse()'>
+                    <span class='glyphicon glyphicon-education'></span> Counter
+                </a>
+            </li>
+            <li [routerLinkActive]='["link-active"]'>
+                <a [routerLink]='["/fetch-data"]' (click)='collapse()'>
+                    <span class='glyphicon glyphicon-th-list'></span> Fetch data
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar-right">
+        <button class="button button-primary" [routerLink]='["/registration"]'>Sign up</button>
+        <button class="button button-info" [routerLink]='["/login"]'>Sign in</button>
+    </div>
+</div>

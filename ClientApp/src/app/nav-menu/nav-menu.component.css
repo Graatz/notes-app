@@ -1,0 +1,55 @@
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+ul li > a {
+  font-size: 20px;
+  color: #666;
+}
+
+ul li > a:hover {
+  color: #aaa;
+}
+
+.navbar {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: #222;
+}
+
+.navbar-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.navbar-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=nav-menu.component.css.map */

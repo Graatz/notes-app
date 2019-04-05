@@ -1,0 +1,111 @@
+.note-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.note-form-shading {
+  background-color: #000;
+  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.note-form-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 1;
+  width: 40%;
+  height: auto;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  z-index: 99;
+}
+
+.note-form-header {
+  height: auto;
+  width: 100%;
+  background-color: #222;
+  padding: 35px;
+}
+
+.note-form-header h2 {
+  margin: 0 0 10px 0;
+}
+
+.note-form-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 35px;
+  width: 100%;
+}
+
+.note-form-cancel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 15px 15px 0 0;
+}
+
+.note-form-cancel:hover {
+  cursor: pointer;
+}
+
+.note-form-cancel::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 15px;
+  content: "\d7";
+  color: #444;
+  font-size: 35px;
+  text-align: center;
+  overflow: hidden;
+}
+/*# sourceMappingURL=note-form.component.css.map */

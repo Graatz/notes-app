@@ -1,0 +1,10 @@
+<div>
+  <div class="wrapper">
+      <app-nav-menu class="nav"></app-nav-menu>
+      <div class="container">
+          <router-outlet></router-outlet>
+      </div>
+
+      <note-form (closeModal)="closeModal()" *ngIf="isModal" class="note-form-modal" [@easeInOut]></note-form>
+  </div>
+</div>

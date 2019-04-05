@@ -1,0 +1,78 @@
+@import "../../variables.scss";
+
+.add-note-button {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: red;
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.note {
+    margin-bottom: $basic-margin;
+    background-color: $background-color-lighter;
+    padding: $basic-padding;
+    border-left: 4px solid $primary-color;
+    transition: background-color 0.25s ease-in-out;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 100%;
+
+    h2 {
+        font-size: 18px;
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .tags {
+        display: flex;
+    }
+
+    .tags > .tag {
+        margin-top: $basic-margin;
+        background-color: #333;
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 3px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+.add-note-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 60px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: $primary-color;
+    bottom: $basic-padding;
+    right: $basic-padding;
+
+    transition: all 0.15s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    span {
+        transform: translateY(-3px);
+    }
+}

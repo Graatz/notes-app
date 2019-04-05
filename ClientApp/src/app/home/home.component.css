@@ -1,0 +1,94 @@
+.add-note-button {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: red;
+}
+
+.notes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.note {
+  margin-bottom: 25px;
+  background-color: #222;
+  padding: 25px;
+  border-left: 4px solid #23c0c5;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  width: 100%;
+}
+
+.note h2 {
+  font-size: 18px;
+}
+
+.note:last-of-type {
+  margin-bottom: 0;
+}
+
+.note:hover {
+  cursor: pointer;
+}
+
+.note .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.note .tags > .tag {
+  margin-top: 25px;
+  background-color: #333;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.note .tags > .tag:last-of-type {
+  margin-right: 0;
+}
+
+.add-note-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 60px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: #23c0c5;
+  bottom: 25px;
+  right: 25px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.add-note-button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+.add-note-button span {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+/*# sourceMappingURL=home.component.css.map */

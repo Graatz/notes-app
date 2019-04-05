@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,kBAAkB,CAAC;EACf,OAAO,ECKK,IAAI;EDJhB,gBAAgB,ECHQ,IAAI;EDI5B,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,KAAK,EAAE,KAAK;EACZ,aAAa,EAAE,GAAG;CACrB",
+    "sources": [
+        "registration.component.scss",
+        "../../variables.scss"
+    ],
+    "names": [],
+    "file": "registration.component.css"
+}
