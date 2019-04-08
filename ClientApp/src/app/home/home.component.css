@@ -3,6 +3,7 @@
   height: 100px;
   position: absolute;
   background-color: red;
+  z-index: 98;
 }
 
 .notes {
@@ -38,24 +39,6 @@
 
 .note:hover {
   cursor: pointer;
-}
-
-.note .tags {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.note .tags > .tag {
-  margin-top: 25px;
-  background-color: #333;
-  padding: 10px;
-  margin-right: 10px;
-  border-radius: 3px;
-}
-
-.note .tags > .tag:last-of-type {
-  margin-right: 0;
 }
 
 .add-note-button {

@@ -5,6 +5,7 @@
     height: 100px;
     position: absolute;
     background-color: red;
+    z-index: 98;
 }
 
 .notes {
@@ -33,22 +34,6 @@
 
     &:hover {
         cursor: pointer;
-    }
-
-    .tags {
-        display: flex;
-    }
-
-    .tags > .tag {
-        margin-top: $basic-margin;
-        background-color: #333;
-        padding: 10px;
-        margin-right: 10px;
-        border-radius: 3px;
-
-        &:last-of-type {
-            margin-right: 0;
-        }
     }
 }
 

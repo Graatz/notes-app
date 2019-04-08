@@ -86,7 +86,9 @@ input[type="text"], textarea, input[type="password"] {
     border: 1px solid $background-color;
     border-radius: 3px;
     flex-grow: 1;
-
+    font-family: Calibri;
+    font-size: 15px;
+    
     &:focus {
         outline: none;
         border: 1px solid $primary-color;
@@ -100,4 +102,21 @@ input[type="text"], textarea, input[type="password"] {
 
 .form-row {
     display: flex;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags > .tag {
+    margin-top: $basic-margin;
+    background-color: #333;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
 }

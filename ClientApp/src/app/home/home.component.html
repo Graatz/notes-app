@@ -16,10 +16,10 @@
     <p>This is a note description. Lorem ipsum dolor sit amet, note description it is. Some of this text should be
       hidden when reached the end of the line</p>
     <div class="tags">
-      <span class="tag">C#</span>
-      <span class="tag">.NET</span>
-      <span class="tag">SQL</span>
-      <span class="tag">Visual Studio</span>
+      <div class="tag">C#</div>
+      <div class="tag">.NET</div>
+      <div class="tag">SQL</div>
+      <div class="tag">Visual Studio</div>
     </div>
   </div>
 
@@ -51,3 +51,5 @@
 <div class="add-note-button" (click)="showModal()">
   <span>+</span>
 </div>
+
+<note-form (closeModal)="closeModal()" *ngIf="isModal" class="note-form-modal" [@easeInOut]></note-form>

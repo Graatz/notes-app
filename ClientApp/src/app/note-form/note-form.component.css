@@ -11,10 +11,8 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  left: 0;
+  top: 0;
 }
 
 .note-form-shading {
@@ -29,6 +27,7 @@
 }
 
 .note-form-content {
+  padding: 25px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,38 +45,9 @@
   opacity: 1;
   width: 40%;
   height: auto;
-  background-color: #1a1a1a;
+  background-color: #222;
   border-radius: 5px;
   z-index: 99;
-}
-
-.note-form-header {
-  height: auto;
-  width: 100%;
-  background-color: #222;
-  padding: 35px;
-}
-
-.note-form-header h2 {
-  margin: 0 0 10px 0;
-}
-
-.note-form-inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 35px;
-  width: 100%;
 }
 
 .note-form-cancel {

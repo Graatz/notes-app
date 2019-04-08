@@ -1,32 +1,31 @@
 <div class="note-form">
   <div class="note-form-shading" (click)="close()"></div>
   <div class="note-form-content">
-    <div class="note-form-header">
-      <h2>New note</h2>
-      <p>Formularz dodawania nowej notatki. Wypełnij poniższe pola aby dodać nową notatkę.</p>
+    <h1>New note</h1>
+
+    <div class="form-group">
+      <div class="form-row">
+        <input type="text" placeholder="Note name" spellcheck="false" [(ngModel)]="note.name">
+      </div>
     </div>
 
-    <div class="note-form-inputs">
-      <div class="form-group">
-        <div class="form-row">
-          <input type="text" placeholder="Note name" spellcheck="false">
-        </div>
+    <div class="form-group">
+      <div class="form-row">
+        <textarea rows="4" cols="50" placeholder="Note content" spellcheck="false" [(ngModel)]="note.content"></textarea>
       </div>
-
-      <div class="form-group">
-        <div class="form-row">
-          <textarea rows="4" cols="50" placeholder="Note content" spellcheck="false"></textarea>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <div class="form-row">
-          <input type="text" placeholder="Tag name" spellcheck="false">
-          <button class="button button-info">Add tag</button>
-        </div>
-      </div>
-
-      <button type="submit" class="button button-primary">Add note</button>
     </div>
+
+    <div class="form-group">
+      <div class="form-row">
+        <input type="text" placeholder="Tag name" spellcheck="false" [(ngModel)]="tag.name">
+        <button class="button button-info" (click)="addTag()">Add tag</button>
+      </div>
+      <div class="tags">
+        <div class="tag" *ngFor="let tag of note.tags">{{ tag.name }}</div>
+      </div>
+    </div>
+
+    <button type="submit" class="button button-primary" (click)="addNote()">Add note</button>
   </div>
+
 </div>

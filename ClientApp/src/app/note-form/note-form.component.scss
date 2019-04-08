@@ -7,9 +7,9 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    top: 0;
+    
 }
 
 .note-form-shading {
@@ -25,6 +25,7 @@
 }
 
 .note-form-content {
+    padding: $basic-padding;
     position: relative;
     display: flex;
     align-items: center;
@@ -33,29 +34,9 @@
     opacity: 1;
     width: 40%;
     height: auto;
-    background-color: $background-color;
+    background-color: $background-color-lighter;
     border-radius: 5px;
     z-index: 99;
-}
-
-.note-form-header {
-    height: auto;
-    width: 100%;
-    background-color: #222;
-    padding: 35px;
-
-    h2 {
-        margin: 0 0 10px 0;
-    }
-}
-
-.note-form-inputs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 35px;
-    width: 100%;
 }
 
 .note-form-cancel {

@@ -14,6 +14,7 @@ import { NoteFormComponent } from './note-form/note-form.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarService } from './shared/navbarService';
+import { DataService } from './shared/dataService';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { NavbarService } from './shared/navbarService';
     ])
   ],
   providers: [
-    NavbarService
+    NavbarService,
+    DataService
   ],
   bootstrap: [AppComponent]
 })

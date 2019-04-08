@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 50px;
 }
 
 a {
@@ -94,6 +94,8 @@ input[type="text"], textarea, input[type="password"] {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  font-family: Calibri;
+  font-size: 15px;
 }
 
 input[type="text"]:focus, textarea:focus, input[type="password"]:focus {
@@ -110,5 +112,25 @@ input[type="text"]:focus, textarea:focus, input[type="password"]:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tags > .tag {
+  margin-top: 25px;
+  background-color: #333;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.tags > .tag:last-of-type {
+  margin-right: 0;
 }
 /*# sourceMappingURL=styles.css.map */
