@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.sidebar-tags {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .tag {
+        display: flex;
+        justify-content: center;
+        background-color: $background-color-lighter;
+        width: 100%;
+        padding: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        border-radius: 3px;
+        transition: background-color 0.2s ease-in-out;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: #252525;
+        }
+    }
+}

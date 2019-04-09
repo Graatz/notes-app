@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,IAAI;CAsBd;;AAzBD,AAKI,aALS,CAKT,IAAI,CAAC;EACD,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,gBAAgB,ECPI,IAAI;EDQxB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,YAAY,EAAE,IAAI;EAClB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,iCAAiC;CAUhD;;AAxBL,AAgBQ,aAhBK,CAKT,IAAI,AAWC,cAAc,CAAC;EACZ,UAAU,EAAE,CAAC;CAChB;;AAlBT,AAoBQ,aApBK,CAKT,IAAI,AAeC,MAAM,CAAC;EACJ,MAAM,EAAE,OAAO;EACf,gBAAgB,EAAE,OAAO;CAC5B",
+    "sources": [
+        "sidebar-nav-menu.component.scss",
+        "../../variables.scss"
+    ],
+    "names": [],
+    "file": "sidebar-nav-menu.component.css"
+}

@@ -1,12 +1,20 @@
+@import url(c:\Users\Graatz\Desktop\notes-app\ClientApp\node_modules\@angular\material\prebuilt-themes\indigo-pink.css);
+:host {
+  width: 100%;
+  height: 100%;
+}
+
 .add-note-button {
   width: 100px;
   height: 100px;
   position: absolute;
-  background-color: red;
+  background-color: #00c0b0;
   z-index: 98;
 }
 
 .notes {
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,18 +22,21 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .note {
   margin-bottom: 25px;
-  background-color: #222;
+  background-color: #1a1a1a;
   padding: 25px;
-  border-left: 4px solid #23c0c5;
   -webkit-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-radius: 3px;
   width: 100%;
 }
 
@@ -57,7 +68,7 @@
   height: 70px;
   border-radius: 50%;
   position: fixed;
-  background-color: #23c0c5;
+  background-color: #00c0b0;
   bottom: 25px;
   right: 25px;
   -webkit-transition: all 0.15s ease-in-out;

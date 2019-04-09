@@ -15,7 +15,7 @@ body, ul, p {
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #111;
   font-family: Calibri;
   color: #777;
 }
@@ -46,7 +46,7 @@ p {
   background-color: transparent;
   color: #aaa;
   border: 1px solid #aaa;
-  border-radius: 3px;
+  border-radius: 5px;
   margin-right: 25px;
   font-size: 13px;
   font-weight: 600;
@@ -54,6 +54,10 @@ p {
 
 .button:hover {
   cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button:last-of-type {
@@ -74,7 +78,7 @@ p {
 }
 
 .button-primary {
-  background-color: #23c0c5;
+  background-color: #00c0b0;
   color: #fff;
   border: none;
   -webkit-transition: all 0.15s ease-in-out;
@@ -82,25 +86,67 @@ p {
 }
 
 .button-primary:hover {
-  background-color: #1eb2b8;
+  background-color: #00b3a4;
+}
+
+.button-success {
+  background-color: #4bbe2f;
+  color: #fff;
+  border: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.button-success:hover {
+  background-color: #43a829;
+}
+
+.button-danger {
+  background-color: #cf3b3b;
+  color: #fff;
+  border: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.button-danger:hover {
+  background-color: #c43131;
 }
 
 input[type="text"], textarea, input[type="password"] {
   color: #777;
   padding: 15px;
-  background-color: #1a1a1a;
-  border: 1px solid #1a1a1a;
+  background-color: #111;
+  border: 1px solid #111;
   border-radius: 3px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   font-family: Calibri;
   font-size: 15px;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder {
+  color: #444;
+}
+
+input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder {
+  color: #444;
+}
+
+input[type="text"]::-ms-input-placeholder, textarea::-ms-input-placeholder, input[type="password"]::-ms-input-placeholder {
+  color: #444;
+}
+
+input[type="text"]::placeholder, textarea::placeholder, input[type="password"]::placeholder {
+  color: #444;
 }
 
 input[type="text"]:focus, textarea:focus, input[type="password"]:focus {
   outline: none;
-  border: 1px solid #23c0c5;
+  border: 1px solid #777;
 }
 
 .form-group {
@@ -123,14 +169,21 @@ input[type="text"]:focus, textarea:focus, input[type="password"]:focus {
 }
 
 .tags > .tag {
-  margin-top: 25px;
-  background-color: #333;
+  background-color: #222;
   padding: 10px;
   margin-right: 10px;
+  margin-top: 10px;
   border-radius: 3px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .tags > .tag:last-of-type {
   margin-right: 0;
+}
+
+.tags > .tag:hover {
+  cursor: pointer;
+  background-color: #252525;
 }
 /*# sourceMappingURL=styles.css.map */

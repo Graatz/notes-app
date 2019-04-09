@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -15,7 +15,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarService } from './shared/navbarService';
 import { DataService } from './shared/dataService';
-
+import { SidebarNavMenuComponent } from './sidebar-nav-menu/sidebar-nav-menu.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +26,14 @@ import { DataService } from './shared/dataService';
     FetchDataComponent,
     NoteFormComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    SidebarNavMenuComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule,
+    //BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },

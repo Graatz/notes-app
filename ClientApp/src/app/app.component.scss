@@ -12,18 +12,33 @@
     width: 100%;
 }
 
+.content-wrapper {
+    width: 80%;
+    min-height: calc(100vh - 100px);
+    display: flex;
+}
+
+.side-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $basic-padding;
+    min-height: calc(100vh - 100px);
+    min-width: 20%;
+    max-width: 20%;
+    width: 20%;
+    background-color: $background-color;
+    display: flex;
+}
+
 .container {
     padding: $basic-padding;
-    width: 1400px;
+    width: 80%;
     min-height: calc(100vh - 100px);
-    max-width: 1400px;
-    min-width: 1400px;
+    max-width: 80%;
+    min-width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.note-form-modal {
-    
 }
   
