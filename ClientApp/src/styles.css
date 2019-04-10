@@ -1,12 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|PT+Sans:400,700");
 body, ul, p {
   padding: 0;
   margin: 0;
-}
-
-@font-face {
-  font-family: Hattori;
-  src: url(assets/font/Hattori_Hanzo.otf) format("opentype");
 }
 
 * {
@@ -15,17 +11,17 @@ body, ul, p {
 }
 
 body {
-  background-color: #111;
-  font-family: Calibri;
+  background-color: #222;
+  font-family: 'PT Sans', sans-serif;
   color: #777;
+  font-size: 13px;
 }
 
 h1, h2, h3, h4 {
-  font-family: Hattori;
+  font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2px;
   color: #ccc;
-  margin: 0 0 25px 0;
+  margin: 0 0 15px 0;
 }
 
 h1 {
@@ -38,18 +34,19 @@ a {
 }
 
 p {
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .button {
-  padding: 15px 20px 15px 20px;
+  padding: 10px 15px 10px 15px;
   background-color: transparent;
   color: #aaa;
   border: 1px solid #aaa;
   border-radius: 5px;
-  margin-right: 25px;
+  margin-right: 15px;
   font-size: 13px;
   font-weight: 600;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .button:hover {
@@ -78,7 +75,7 @@ p {
 }
 
 .button-primary {
-  background-color: #00c0b0;
+  background-color: #00aeff;
   color: #fff;
   border: none;
   -webkit-transition: all 0.15s ease-in-out;
@@ -86,7 +83,7 @@ p {
 }
 
 .button-primary:hover {
-  background-color: #00b3a4;
+  background-color: #009ce4;
 }
 
 .button-success {
@@ -150,7 +147,7 @@ input[type="text"]:focus, textarea:focus, input[type="password"]:focus {
 }
 
 .form-group {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   width: 100%;
 }
 
@@ -170,12 +167,13 @@ input[type="text"]:focus, textarea:focus, input[type="password"]:focus {
 
 .tags > .tag {
   background-color: #222;
-  padding: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
+  padding: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
   border-radius: 3px;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
+  font-size: 11px;
 }
 
 .tags > .tag:last-of-type {

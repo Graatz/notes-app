@@ -8,7 +8,7 @@
   width: 100px;
   height: 100px;
   position: absolute;
-  background-color: #00c0b0;
+  background-color: #00aeff;
   z-index: 98;
 }
 
@@ -18,38 +18,58 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .note {
-  margin-bottom: 25px;
+  margin-right: 15px;
   background-color: #1a1a1a;
-  padding: 25px;
-  -webkit-transition: background-color 0.25s ease-in-out;
-  transition: background-color 0.25s ease-in-out;
   border-radius: 3px;
-  width: 100%;
+  min-width: calc(25% - (3.0 * 15px)/4.0);
+  max-width: calc(25% - (3.0 * 15px)/4.0);
 }
 
-.note h2 {
-  font-size: 18px;
-}
-
-.note:last-of-type {
-  margin-bottom: 0;
+.note:nth-child(4n) {
+  margin-right: 0;
 }
 
 .note:hover {
   cursor: pointer;
+}
+
+.note:hover .note-img > img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.note-img {
+  overflow: hidden;
+}
+
+.note-img img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+  transition: -webkit-transform 3s ease-in-out;
+  transition: transform 3s ease-in-out;
+  transition: transform 3s ease-in-out, -webkit-transform 3s ease-in-out;
+}
+
+.note-content {
+  padding: 15px;
+}
+
+.note-content h2 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  -webkit-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 .add-note-button {
@@ -68,9 +88,9 @@
   height: 70px;
   border-radius: 50%;
   position: fixed;
-  background-color: #00c0b0;
-  bottom: 25px;
-  right: 25px;
+  background-color: #00aeff;
+  bottom: 15px;
+  right: 15px;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }

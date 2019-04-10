@@ -1,26 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 @import "variables.scss";
 @import "reset.scss";
-
-@font-face {
-    font-family: Hattori;
-    src: url(assets/font/Hattori_Hanzo.otf) format("opentype");
-}
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|PT+Sans:400,700');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: $background-color-darker;
-    font-family: Calibri;
+    background-color: $background-color-lighter;
+    font-family: 'PT Sans', sans-serif;
     color: $text-color;
+    font-size: 13px;
 }
 
 h1, h2, h3, h4 {
-    font-family: Hattori;
+    font-family: 'Archivo Black', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2px;
     color: $heading-color;
     margin: 0 0 $basic-margin 0;
 }
@@ -35,11 +31,11 @@ a {
 }
 
 p {
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .button {
-    padding: 15px 20px 15px 20px;
+    padding: 10px 15px 10px 15px;
     background-color: transparent;
     color: $link-color;
     border: 1px solid $link-color;
@@ -47,6 +43,7 @@ p {
     margin-right: $basic-margin;
     font-size: 13px;
     font-weight: 600;
+    font-family: 'PT Sans', sans-serif;
 
     &:hover {
         cursor: pointer;
@@ -142,11 +139,12 @@ input[type="text"], textarea, input[type="password"] {
 
 .tags > .tag {
     background-color: $background-color-lighter;
-    padding: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
     border-radius: 3px;
     transition: background-color 0.2s ease-in-out;
+    font-size: 11px;
 
     &:last-of-type {
         margin-right: 0;

@@ -8,12 +8,16 @@ ul li {
 }
 
 ul li > a {
-  font-size: 18px;
+  font-size: 13px;
   color: #666;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
 }
 
 ul li > a:hover {
-  color: #aaa;
+  color: #00aeff;
 }
 
 .navbar {
@@ -25,7 +29,7 @@ ul li > a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  height: 90px;
+  height: 70px;
   background-color: #1a1a1a;
 }
 
